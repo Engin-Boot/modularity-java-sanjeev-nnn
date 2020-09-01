@@ -1,7 +1,6 @@
 package colorcoder;
 
 public class Main {
-
     static ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
@@ -13,7 +12,6 @@ public class Main {
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major.getIndex() * numberOfMinorColors + minor.getIndex() + 1;
     }
-
     static void testNumberToPair(int pairNumber,
         MajorColor expectedMajor,
         MinorColor expectedMinor)
@@ -23,7 +21,6 @@ public class Main {
         assert(colorPair.getMajor() == expectedMajor);
         assert(colorPair.getMinor() == expectedMinor);
     }
-
     static void testPairToNumber(
         MajorColor major,
         MinorColor minor,
@@ -33,12 +30,9 @@ public class Main {
         System.out.println("Got pair number " + pairNumber);
         assert(pairNumber == expectedPairNumber);
     }
-
     public static void main(String[] args) {
         testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
         testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
-    
         testPairToNumber(MajorColor.BLACK, MinorColor.ORANGE, 12);
         testPairToNumber(MajorColor.VIOLET, MinorColor.SLATE, 25);
-    }
-}
+    }}
