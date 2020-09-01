@@ -4,13 +4,13 @@ public class Main {
     static ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
-            MajorColor.fromIndex(zeroBasedPairNumber / numberOfMinorColors);
+            MajorColor.fromIndex(zeroBasedPairNumber / ColorNames.numberOfMinorColors);
         MinorColor minorColor =
-            MinorColor.fromIndex(zeroBasedPairNumber % numberOfMinorColors);
+            MinorColor.fromIndex(zeroBasedPairNumber % ColorNames.numberOfMinorColors);
         return new ColorPair(majorColor, minorColor);
     }
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
-        return major.getIndex() * numberOfMinorColors + minor.getIndex() + 1;
+        return major.getIndex() * ColorNames.numberOfMinorColors + minor.getIndex() + 1;
     }
     static void testNumberToPair(int pairNumber,
         MajorColor expectedMajor,
