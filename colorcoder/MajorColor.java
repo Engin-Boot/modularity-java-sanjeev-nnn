@@ -18,4 +18,5 @@ public enum MajorColor {
                     return color;
                 }}
             return null;
-        }}
+       }
+}
