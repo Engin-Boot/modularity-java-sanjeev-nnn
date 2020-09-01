@@ -22,4 +22,4 @@ public class ColorPair {
         colorPairStr += " ";
         colorPairStr += ColorNames.MinorColorNames[minorColor.getIndex()];
         return colorPairStr;
-    }
+    }}
