@@ -20,6 +20,14 @@ public class Main {
         System.out.println("Got pair number " + pairNumber);
         assert(pairNumber == expectedPairNumber);
     }
+    public String toString() {
+    	String Manual="";
+    	
+    	for(int=1; i<=25; i++) {
+    		Manual += i + " " + Exchange.GetColorFromPairNumber(i).ToString()+"\n";
+    	}
+    	return Manual;
+    }
     public static void main(String[] args) {
         testNumberToPair(4, MajorColor.WHITE, MinorColor.BROWN);
         testNumberToPair(5, MajorColor.WHITE, MinorColor.SLATE);
