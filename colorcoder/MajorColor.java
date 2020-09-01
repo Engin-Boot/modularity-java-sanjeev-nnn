@@ -8,8 +8,7 @@ public enum MajorColor {
         VIOLET(4);
         private int index;
         private MajorColor(int index) {
-            this.index = index;
-        }
+            this.index = index;}
         int getIndex() {
             return index;
         }
@@ -17,8 +16,6 @@ public enum MajorColor {
             for(MajorColor color: MajorColor.values()) {
                 if(color.getIndex() == index) {
                     return color;
-                }
-            }
+                }}
             return null;
-        }
-        }
+        }}
