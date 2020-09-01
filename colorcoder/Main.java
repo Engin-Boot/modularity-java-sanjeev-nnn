@@ -23,7 +23,7 @@ public class Main {
     public String toString() {
     	String Manual="";
     	
-    	for(int=1; i<=25; i++) {
+    	for(int i=1; i<=25; i++) {
     		Manual += i + " " + Exchange.GetColorFromPairNumber(i).ToString()+"\n";
     	}
     	return Manual;
