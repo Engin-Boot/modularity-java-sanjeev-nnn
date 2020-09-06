@@ -12,4 +12,14 @@ public class Exchange {
     }
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major.getIndex() * ColorNames.numberOfMinorColors + minor.getIndex() + 1;
-    }}
+    }
+    public static colorInterface fromIndex(Object[] colors, int index) {
+        for(Object obj: colors) {
+        	colorInterface color = (colorInterface)obj;
+            if(color.getIndex() == index) {
+                return color;
+            }
+        }
+        return null;
+    }
+}
