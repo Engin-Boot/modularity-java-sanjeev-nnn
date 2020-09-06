@@ -5,9 +5,9 @@ public class Exchange {
 	static ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
-            MajorColor.fromIndex(zeroBasedPairNumber / ColorNames.numberOfMinorColors);
+            (MajorColor) fromIndex(MajorColor.values(), zeroBasedPairNumber / ColorNames.numberOfMinorColors); 
         MinorColor minorColor =
-            MinorColor.fromIndex(zeroBasedPairNumber % ColorNames.numberOfMinorColors);
+            (MinorColor) fromIndex(MinorColor.values(), zeroBasedPairNumber % ColorNames.numberOfMinorColors);
         return new ColorPair(majorColor, minorColor);
     }
     static int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
