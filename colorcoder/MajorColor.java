@@ -1,6 +1,6 @@
 package colorcoder;
 
-public enum MajorColor {
+public enum MajorColor implements colorInterface{
         WHITE(0),
         RED(1),
         BLACK(2),
