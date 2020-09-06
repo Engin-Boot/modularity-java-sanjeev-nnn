@@ -13,12 +13,13 @@ public enum MajorColor {
         int getIndex() {
             return index;
         }
-        public static MajorColor fromIndex(int index) {
+
+/*        public static MajorColor fromIndex(int index) {
             for(MajorColor color: MajorColor.values()) {
                 if(color.getIndex() == index) {
                     return color;
                 }
             }
             return null;
-       }
+       } */
 }
