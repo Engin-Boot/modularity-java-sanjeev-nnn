@@ -1,5 +1,5 @@
 package colorcoder;
 
-public interface IColor {
+public interface colorInterface {
 	public int getIndex();
 }
