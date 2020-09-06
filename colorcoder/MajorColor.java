@@ -10,7 +10,7 @@ public enum MajorColor implements colorInterface{
         private MajorColor(int index) {
             this.index = index;
         }
-        int getIndex() {
+       public int getIndex() {
             return index;
         }
 
