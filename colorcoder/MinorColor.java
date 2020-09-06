@@ -10,7 +10,7 @@ public enum MinorColor implements colorInterface{
     private MinorColor(int index) {
         this.index = index;
     }
-    int getIndex() {
+    public int getIndex() {
         return index;
     }
 /*    public static MinorColor fromIndex(int index) {
